@@ -1,0 +1,31 @@
+{
+  "name": "sharedstreets-types",
+  "version": "1.0.0",
+  "description": "TypeScript definitions for SharedStreets.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharedstreets/sharedstreets-js-types.git"
+  },
+  "keywords": [
+    "SharedStreets",
+    "Typescript",
+    "Definition",
+    "Types"
+  ],
+  "author": "Denis Carriere <@DenisCarriere>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sharedstreets/sharedstreets-js-types/issues"
+  },
+  "homepage": "https://github.com/sharedstreets/sharedstreets-js-types#readme",
+  "devDependencies": {
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@turf/helpers": "5"
+  }
+}
