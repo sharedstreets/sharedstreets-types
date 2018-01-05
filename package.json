@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "description": "TypeScript definitions for SharedStreets.js",
   "main": "index.js",
+  "files": [
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "tsc test.ts"
   },
