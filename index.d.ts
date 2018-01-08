@@ -22,6 +22,7 @@ export interface SharedStreetsGeometryProperties {
 }
 
 // SharedStreets - Helpers
+export type Location = Feature<Point> | Point | number[]
 export type SharedStreetsRoadClass =
   'Motorway' |
   'Trunk' |
@@ -42,3 +43,4 @@ export type SharedStreetsFormOfWay =
   'TrafficSquare' |
   'SlipRoad' |
   'Other'
+
