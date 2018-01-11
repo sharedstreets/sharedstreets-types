@@ -2,7 +2,16 @@ import { Feature, Point, LineString } from '@turf/helpers'
 
 // SharedStreets - GeoJSON
 export type SharedStreetsIntersection = Feature<Point, SharedStreetsIntersectionProperties>
+export type SharedStreetsLocationReference = Feature<Point, SharedStreetsLocationReferenceProperties>
 export type SharedStreetsGeometry = Feature<LineString, SharedStreetsGeometryProperties>
+
+// SharedStreets - JSON
+export interface SharedStreetsReference {
+  id: string,
+  formOfWay: SharedStreetsFormOfWay,
+  geometryId: string,
+  locationReferences: string[],
+}
 
 // SharedStreets - GeoJSON Properties
 export interface SharedStreetsIntersectionProperties {
@@ -11,7 +20,6 @@ export interface SharedStreetsIntersectionProperties {
   inboundReferenceIds?: string[],
   outboundReferenceIds?: string[],
 }
-
 export interface SharedStreetsGeometryProperties {
   id: string,
   fromIntersectionId?: string,
@@ -20,9 +28,14 @@ export interface SharedStreetsGeometryProperties {
   backReferenceId?: string,
   roadClass?: SharedStreetsRoadClass,
 }
+export interface SharedStreetsLocationReferenceProperties extends SharedStreetsIntersectionProperties {
+  id: string,
+  outboundBearing?: number,
+  inboundBearing?: number,
+  distanceToNextRef?: number,
+}
 
 // SharedStreets - Helpers
-export type Location = Feature<Point> | Point | number[]
 export type SharedStreetsRoadClass =
   'Motorway' |
   'Trunk' |
@@ -43,4 +56,3 @@ export type SharedStreetsFormOfWay =
   'TrafficSquare' |
   'SlipRoad' |
   'Other'
-
