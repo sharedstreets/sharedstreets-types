@@ -1,16 +1,18 @@
 import { point } from '@turf/helpers'
 import {
-  SharedStreetsIntersection as Intersection,
-  SharedStreetsLocationReference as LocationReference,
-  SharedStreetsIntersectionProperties as IntersectionProps
+  SharedStreetsIntersection,
+  SharedStreetsLocationReference,
 } from './'
 
 const id = 'ABC'
-const properties: IntersectionProps = {
+
+// Intersection
+const pt: SharedStreetsIntersection = point([10, 10], {
   id,
   osmNodeId: 123,
   inboundReferenceIds: ['DEF'],
   outboundReferenceIds: ['GHI']
-}
-const pt: Intersection = point([10, 10], properties, {id})
-const loc: LocationReference = point([10, 10], properties, {id})
+}, {id})
+
+// Location Reference
+const loc: SharedStreetsLocationReference = point([10, 10], {intersectionId: id})
