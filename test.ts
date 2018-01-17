@@ -1,18 +1,13 @@
-import { point } from '@turf/helpers'
-import {
-  SharedStreetsIntersection,
-  SharedStreetsLocationReference,
-} from './'
-
-const id = 'ABC'
+import { SharedStreetsIntersection, RoadClass } from './'
 
 // Intersection
-const pt: SharedStreetsIntersection = point([10, 10], {
-  id,
-  osmNodeId: 123,
+const intersection: SharedStreetsIntersection = {
+  id: 'ABC',
+  nodeId: 123,
   inboundReferenceIds: ['DEF'],
   outboundReferenceIds: ['GHI']
-}, {id})
+}
 
-// Location Reference
-const loc: SharedStreetsLocationReference = point([10, 10], {intersectionId: id})
+// RoadClass
+RoadClass.Motorway // => 0
+RoadClass.Trunk // => 1

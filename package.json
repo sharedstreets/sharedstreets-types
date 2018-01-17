@@ -2,11 +2,14 @@
   "name": "sharedstreets-types",
   "version": "0.1.4",
   "description": "TypeScript definitions for SharedStreets.js",
-  "main": "index.js",
+  "main": "",
+  "types": "index.d.ts",
   "files": [
     "index.d.ts"
   ],
   "scripts": {
+    "prebuild": "pbjs -t static-module -w commonjs -o proto/sharedstreets.js proto/sharedstreets.proto",
+    "build": "pbts -o proto/sharedstreets.d.ts proto/sharedstreets.js",
     "test": "tsc test.ts"
   },
   "repository": {
@@ -26,9 +29,8 @@
   },
   "homepage": "https://github.com/sharedstreets/sharedstreets-js-types#readme",
   "devDependencies": {
+    "protobufjs": "*",
     "typescript": "*"
   },
-  "dependencies": {
-    "@turf/helpers": "5"
-  }
+  "dependencies": {}
 }
