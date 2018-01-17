@@ -121,7 +121,7 @@ export interface LocationReference {
 }
 
 /** Properties of a SharedStreetsReference. */
-export interface ISharedStreetsReference {
+export interface SharedStreetsReference {
 
   /** SharedStreetsReference id */
   id?: string;
