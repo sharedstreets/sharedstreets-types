@@ -95,7 +95,7 @@ export interface SharedStreetsGeometry {
   roadClass?: RoadClass;
 
   /** SharedStreetsGeometry latlons */
-  latlons?: number[];
+  lonlats?: number[];
 }
 
 /** Properties of a LocationReference. */
