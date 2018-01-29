@@ -89,7 +89,7 @@ export interface SharedStreetsMetadata {
 export interface SharedStreetsGeometry {
 
   /** SharedStreetsGeometry id */
-  id?: string;
+  id: string;
 
   /** SharedStreetsGeometry fromIntersectionId */
   fromIntersectionId?: string;
@@ -118,13 +118,13 @@ export interface SharedStreetsGeometry {
 export interface LocationReference {
 
   /** LocationReference intersectionId */
-  intersectionId?: string;
+  intersectionId: string;
 
   /** LocationReference lon */
-  lon?: number;
+  lon: number;
 
   /** LocationReference lat */
-  lat?: number;
+  lat: number;
 
   /**
    * LocationReference inboundBearing
@@ -152,7 +152,7 @@ export interface LocationReference {
 export interface SharedStreetsReference {
 
   /** SharedStreetsReference id */
-  id?: string;
+  id: string;
 
   /** SharedStreetsReference geometryId */
   geometryId?: string;
@@ -183,16 +183,16 @@ export enum FormOfWay {
 export interface SharedStreetsIntersection {
 
   /** SharedStreetsIntersection id */
-  id?: string;
+  id: string;
 
   /** SharedStreetsIntersection nodeId */
   nodeId?: number;
 
   /** SharedStreetsIntersection lon */
-  lon?: number;
+  lon: number;
 
   /** SharedStreetsIntersection lat */
-  lat?: number;
+  lat: number;
 
   /** SharedStreetsIntersection inboundReferenceIds */
   inboundReferenceIds?: string[];
