@@ -1,17 +1,29 @@
 /** Properties of a GISSectionMetadata. */
 export interface GISSectionMetadata {
 
-  /** GISSectionMetadata sectionId */
+  /**
+   * GISSectionMetadata sectionId
+   *
+   * source specific id
+   */
   sectionId?: string;
 
-  /** GISSectionMetadata sectionProperties */
+  /**
+   * GISSectionMetadata sectionProperties
+   *
+   * source specific encoding of properties
+   */
   sectionProperties?: string;
 }
 
 /** Properties of a GISMetadata. */
 export interface GISMetadata {
 
-  /** GISMetadata source */
+  /**
+   * GISMetadata source
+   *
+   * describes GIS source data (e.g. "gov.nyc:lion")
+   */
   source?: string;
 
   /** GISMetadata sections */
@@ -94,8 +106,12 @@ export interface SharedStreetsGeometry {
   /** SharedStreetsGeometry roadClass */
   roadClass?: RoadClass;
 
-  /** SharedStreetsGeometry latlons */
-  latlons?: number[];
+  /**
+   * SharedStreetsGeometry lonlats
+   *
+   * interleaved lon/lat pairs in sequence
+   */
+  lonlats?: number[];
 }
 
 /** Properties of a LocationReference. */
@@ -104,19 +120,31 @@ export interface LocationReference {
   /** LocationReference intersectionId */
   intersectionId?: string;
 
-  /** LocationReference lat */
-  lat?: number;
-
   /** LocationReference lon */
   lon?: number;
 
-  /** LocationReference inboundBearing */
+  /** LocationReference lat */
+  lat?: number;
+
+  /**
+   * LocationReference inboundBearing
+   *
+   * rounded to nearest degree 0-360 -- optional field, using proto3 oneof to allow for nulls
+   */
   inboundBearing?: number;
 
-  /** LocationReference outboundBearing */
+  /**
+   * LocationReference outboundBearing
+   *
+   * rounded to nearest degree 0-360 -- optional field, using proto3 oneof to allow for nulls
+   */
   outboundBearing?: number;
 
-  /** LocationReference distanceToNextRef */
+  /**
+   * LocationReference distanceToNextRef
+   *
+   * in centimeters -- max value of 15km -- optional field, using proto3 oneof to allow for nulls
+   */
   distanceToNextRef?: number;
 }
 
@@ -143,6 +171,9 @@ export enum FormOfWay {
   MultipleCarriageway = 2,
   SingleCarriageway = 3,
   Roundabout = 4,
+  /**
+   * yikes: https://giphy.com/gifs/square-addis-meskel-GYb9s3Afw0cWA
+   */
   TrafficSquare = 5,
   SlipRoad = 6,
   Other = 7
@@ -157,11 +188,11 @@ export interface SharedStreetsIntersection {
   /** SharedStreetsIntersection nodeId */
   nodeId?: number;
 
-  /** SharedStreetsIntersection lat */
-  lat?: number;
-
   /** SharedStreetsIntersection lon */
   lon?: number;
+
+  /** SharedStreetsIntersection lat */
+  lat?: number;
 
   /** SharedStreetsIntersection inboundReferenceIds */
   inboundReferenceIds?: string[];
