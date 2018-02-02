@@ -1,5 +1,13 @@
 # Changelog
 
+## 2018-02-02 (1.1.2)
+
+- Change `geometryID` => `geometryId`
+
+## 2018-01-29 (1.0.0)
+
+- Refactor types to reflect pure `.proto` format
+
 ## 2018-01-28 (0.5.0)
 
 - Update Sharedstreets `.proto`
