@@ -75,8 +75,8 @@ export interface OSMMetadata {
 /** Properties of a SharedStreetsMetadata. */
 export interface SharedStreetsMetadata {
 
-  /** SharedStreetsMetadata geometryID */
-  geometryID?: string;
+  /** SharedStreetsMetadata geometryId */
+  geometryId?: string;
 
   /** SharedStreetsMetadata osmMetadata */
   osmMetadata?: OSMMetadata;

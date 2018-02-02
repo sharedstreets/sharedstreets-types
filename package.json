@@ -32,5 +32,7 @@
     "protobufjs": "*",
     "typescript": "*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "sharedstreets-types": "^1.1.1"
+  }
 }
