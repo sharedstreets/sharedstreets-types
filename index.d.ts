@@ -50,7 +50,7 @@ export interface WaySection {
   wayId?: number;
 
   /** WaySection roadClass */
-  roadClass?: RoadClass;
+  roadClass?: string;
 
   /** WaySection oneWay */
   oneWay?: boolean;
@@ -104,7 +104,7 @@ export interface SharedStreetsGeometry {
   backReferenceId?: string;
 
   /** SharedStreetsGeometry roadClass */
-  roadClass?: RoadClass;
+  roadClass?: string;
 
   /**
    * SharedStreetsGeometry lonlats
@@ -158,7 +158,7 @@ export interface SharedStreetsReference {
   geometryId?: string;
 
   /** SharedStreetsReference formOfWay */
-  formOfWay?: FormOfWay;
+  formOfWay?: number;
 
   /** SharedStreetsReference locationReferences */
   locationReferences?: LocationReference[];

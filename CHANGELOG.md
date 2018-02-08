@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018-02-08 (1.1.3)
+
+- Drop enums for `FormOfWay` & `RoadClass`
+
 ## 2018-02-02 (1.1.2)
 
 - Change `geometryID` => `geometryId`
