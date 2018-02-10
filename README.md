@@ -1,5 +1,8 @@
 # TypeScript definitions for [SharedStreets.js](https://sharedstreets.io/)
 
+[![npm version](https://badge.fury.io/js/sharedstreets-types.svg)](https://badge.fury.io/js/sharedstreets-types)
+[![Build Status](https://travis-ci.org/sharedstreets/sharedstreets-types.svg?branch=master)](https://travis-ci.org/sharedstreets/sharedstreets-types)
+
 ## Installation
 
 ```
