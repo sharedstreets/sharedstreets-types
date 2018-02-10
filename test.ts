@@ -1,15 +1,18 @@
-import { SharedStreetsIntersection, RoadClass } from './'
+import test from "tape";
+import { RoadClass, SharedStreetsIntersection } from "./";
 
 // Intersection
 const intersection: SharedStreetsIntersection = {
-  id: 'ABC',
+  id: "ABC",
+  inboundReferenceIds: ["DEF"],
   lat: 45,
   lon: 110,
   nodeId: 123,
-  inboundReferenceIds: ['DEF'],
-  outboundReferenceIds: ['GHI']
-}
+  outboundReferenceIds: ["GHI"],
+};
 
-// RoadClass
-RoadClass.Motorway // => 0
-RoadClass.Trunk // => 1
+test("sharedstreets-types", (t: any) => {
+  t.equal(RoadClass.Motorway, 0);
+  t.equal(RoadClass.Trunk, 1);
+  t.end();
+});
