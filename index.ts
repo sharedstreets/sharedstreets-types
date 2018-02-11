@@ -155,13 +155,13 @@ export interface SharedStreetsReference {
   id: string;
 
   /** SharedStreetsReference geometryId */
-  geometryId?: string;
+  geometryId: string;
 
   /** SharedStreetsReference formOfWay */
-  formOfWay?: number;
+  formOfWay: number;
 
   /** SharedStreetsReference locationReferences */
-  locationReferences?: LocationReference[];
+  locationReferences: LocationReference[];
 }
 
 /** FormOfWay enum. */

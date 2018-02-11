@@ -2,6 +2,7 @@
 
 ## 2018-02-10 (1.2.0)
 
+- Remove optional interface objects to `SharedStreetReference`
 - Allow `enum` to work in CommonJS
 - Replaced `index.d.ts` with `index.ts`
 - Enforce strict Typescript & TSLint config
