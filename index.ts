@@ -111,7 +111,7 @@ export interface SharedStreetsGeometry {
    *
    * interleaved lon/lat pairs in sequence
    */
-  lonlats?: number[];
+  lonlats: number[];
 }
 
 /** Properties of a LocationReference. */
