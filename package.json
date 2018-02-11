@@ -32,6 +32,7 @@
     "@types/tape": "*",
     "tap": "*",
     "tape": "*",
+    "tslint": "*",
     "typescript": "*"
   },
   "dependencies": {}
