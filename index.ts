@@ -40,7 +40,7 @@ export enum RoadClass {
   Residential = 5,
   Unclassified = 6,
   Service = 7,
-  Other = 8
+  Other = 8,
 }
 
 /** Properties of a WaySection. */
@@ -62,7 +62,7 @@ export interface WaySection {
   link?: boolean;
 
   /** WaySection nodeIds */
-  nodeIds?: (number)[];
+  nodeIds?: number[];
 }
 
 /** Properties of a OSMMetadata. */
@@ -176,7 +176,7 @@ export enum FormOfWay {
    */
   TrafficSquare = 5,
   SlipRoad = 6,
-  Other = 7
+  Other = 7,
 }
 
 /** Properties of a SharedStreetsIntersection. */
