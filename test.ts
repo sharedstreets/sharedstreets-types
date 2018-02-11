@@ -11,7 +11,7 @@ const intersection: SharedStreetsIntersection = {
   outboundReferenceIds: ["GHI"],
 };
 
-test("sharedstreets-types", (t: any) => {
+test("sharedstreets-types", (t) => {
   t.equal(RoadClass.Motorway, 0);
   t.equal(RoadClass.Trunk, 1);
   t.end();

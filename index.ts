@@ -62,7 +62,7 @@ export interface WaySection {
   link?: boolean;
 
   /** WaySection nodeIds */
-  nodeIds?: Array<number>;
+  nodeIds?: number[];
 }
 
 /** Properties of a OSMMetadata. */

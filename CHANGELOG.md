@@ -1,5 +1,11 @@
 # Changelog
 
+## 2018-02-10 (1.2.0)
+
+- Allow `enum` to work in CommonJS
+- Replaced `index.d.ts` with `index.ts`
+- Enforce strict Typescript & TSLint config
+
 ## 2018-02-08 (1.1.3)
 
 - Drop enums for `FormOfWay` & `RoadClass`
