@@ -8,8 +8,6 @@
     "index.ts"
   ],
   "scripts": {
-    "prebuild": "pbjs -t static-module -w commonjs -o proto/sharedstreets.js proto/sharedstreets.proto",
-    "build": "pbts -o proto/sharedstreets.d.ts proto/sharedstreets.js",
     "pretest": "tsc",
     "test": "tap test.js",
     "posttest": "tslint index.ts --project tsconfig.json"
@@ -32,7 +30,6 @@
   "homepage": "https://github.com/sharedstreets/sharedstreets-js-types#readme",
   "devDependencies": {
     "@types/tape": "*",
-    "protobufjs": "*",
     "tap": "*",
     "tape": "*",
     "typescript": "*"
