@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018-02-12 (1.2.3)
+
+- Update `nodeId` to `string`
+
 ## 2018-02-10 (1.2.0)
 
 - Remove optional interface objects to `SharedStreetReference` & `SharedStreetsGeometry`
