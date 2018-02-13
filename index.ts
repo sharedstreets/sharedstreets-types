@@ -186,7 +186,7 @@ export interface SharedStreetsIntersection {
   id: string;
 
   /** SharedStreetsIntersection nodeId */
-  nodeId?: number;
+  nodeId?: string;
 
   /** SharedStreetsIntersection lon */
   lon: number;
