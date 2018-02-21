@@ -7,7 +7,7 @@ const intersection: SharedStreetsIntersection = {
   inboundReferenceIds: ["DEF"],
   lat: 45,
   lon: 110,
-  nodeId: "123",
+  nodeId: 123,
   outboundReferenceIds: ["GHI"],
 };
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018-02-21 (1.2.4)
+
+- Revert `nodeId` to `number`
+
 ## 2018-02-12 (1.2.3)
 
 - Update `nodeId` to `string`
