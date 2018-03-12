@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018-03-12 (1.3.0)
+
+- Include OSM `name` field (https://github.com/sharedstreets/sharedstreets-ref-system/pull/18)
+
 ## 2018-02-21 (1.2.4)
 
 - Revert `nodeId` to `number`

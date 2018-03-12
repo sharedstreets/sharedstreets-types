@@ -63,6 +63,9 @@ export interface WaySection {
 
   /** WaySection nodeIds */
   nodeIds?: number[];
+
+  /** WaySection name */
+  name?: string;
 }
 
 /** Properties of a OSMMetadata. */
@@ -70,6 +73,9 @@ export interface OSMMetadata {
 
   /** OSMMetadata waySections */
   waySections?: WaySection[];
+
+  /** OSMMetadata name */
+  name?: string;
 }
 
 /** Properties of a SharedStreetsMetadata. */
