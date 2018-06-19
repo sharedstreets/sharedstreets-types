@@ -192,7 +192,7 @@ export interface SharedStreetsIntersection {
   id: string;
 
   /** SharedStreetsIntersection nodeId */
-  nodeId?: number;
+  nodeId?: number | string;
 
   /** SharedStreetsIntersection lon */
   lon: number;

@@ -1,6 +1,6 @@
 {
   "name": "sharedstreets-types",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "TypeScript definitions for SharedStreets.js",
   "main": "index",
   "files": [
@@ -30,6 +30,7 @@
   "homepage": "https://github.com/sharedstreets/sharedstreets-js-types#readme",
   "devDependencies": {
     "@types/tape": "*",
+    "protobufjs": "^6.8.6",
     "tap": "*",
     "tape": "*",
     "tslint": "*",
